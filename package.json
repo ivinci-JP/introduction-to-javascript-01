@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "honkit": "^6.1.7"
+  },
+  "scripts": {
+    "build": "honkit build",
+    "build:debug": "honkit build ./ --log=debug --debug",
+    "serve": "honkit serve"
+  }
+}
