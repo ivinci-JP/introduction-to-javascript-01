@@ -32,7 +32,6 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 24
           node-version-file: 'package.json'
           cache: 'npm'
       - name: Install dependencies
