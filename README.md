@@ -5,9 +5,9 @@
 
 1. NodeJS 24をインストール
 2. 依存パッケージをインストール
-    ```bash
-    npm install
-    ```
+```bash
+npm install
+```
 
 ## プレビューサーバ起動
 

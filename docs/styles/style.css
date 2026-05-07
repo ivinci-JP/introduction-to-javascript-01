@@ -1,0 +1,88 @@
+
+@import url('https://cdn.jsdelivr.net/npm/gen-interface-jp@0.1.2/400.css');
+
+/* ================================
+   .markdown-section
+   ================================ */
+
+.markdown-section {
+    font-family: 'Gen Interface JP', sans-serif;
+
+    /* --- Headings --- */
+    & h1 {
+        display: block;
+        width: 100%;
+        color: #fff;
+        background-color: #489BC9;
+        padding: 10px 15px;
+        margin-left: 0;
+        margin-right: 0;
+
+        &::before {
+            content: "# ";
+            color: inherit;
+            display: inline;
+            font-weight: inherit;
+        }
+    }
+
+    & h2 {
+        display: block;
+        width: 100%;
+        color: #489BC9;
+        padding: 10px 15px;
+        margin-left: 0;
+        margin-right: 0;
+        border-bottom: 2px solid #489BC9;
+
+        &::before {
+            content: "## ";
+            color: inherit;
+        }
+    }
+
+    & h3 {
+        display: block;
+        width: 100%;
+        color: #489BC9;
+        padding: 10px 15px;
+        margin-left: 0;
+        margin-right: 0;
+
+        &::before {
+            content: "### ";
+            color: inherit;
+        }
+    }
+
+    /* --- Lists --- */
+    & ul li {
+        list-style: none;
+
+        &::before {
+            content: "●";
+            color: #489BC9;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+    }
+
+    /* --- Page Inner --- */
+    & .page-inner {
+        max-width: 800px;
+    }
+
+    /* --- Code Blocks --- */
+    & code,
+    & pre {
+        font-family: monospace;
+    }
+}
+
+/* ================================
+   Page Layout
+   ================================ */
+
+.book .book-body .page-inner {
+    max-width: 800px;
+}

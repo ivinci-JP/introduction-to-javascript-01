@@ -1,6 +1,10 @@
 {
+    "title": "JavaScript基礎",
     "root": "./docs",
     "author": "i-vinci.co.jp",
+    "styles": {
+        "website": "styles/style.css"
+    },
     "plugins": [
         "expand-active-chapter"
     ]

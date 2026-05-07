@@ -1,23 +1,26 @@
 # 初めてのプログラムを実行する
 
-![alt text](image-1.png) をクリックするとプログラムが実行されます。
-コードエディタの下部にあるペインに、プログラムの出力（結果）が以下のように表示されるはずです。
+プログラムは基本的に1行目から順番に、上から下へと実行されます。
+これを逐次（ちくじ）実行といいます。
 
+先ほども試した通り、1行だけのプログラムを実行すると
+```js
+console.log("Hello, world!");
+```
+
+その1行が1度だけ実行されます。
 ```
 Hello, world!
 ```
-この出力からわかるとおり、このプログラムは Hello, world! というメッセージを出力（表示）することを目的としています。
-JavaScriptは通常、1行目から順番に1行ずつ実行されます。
 
-先頭の2行はおまじないなので気にしなくて良いです。・
+## 複数のメッセージを出力する
+
+では複数行のプログラムはどうでしょうか？
 ```js
-process.stdin.resume();
-process.stdin.setEncoding('utf8');
+console.log("Hello, world!");
+console.log("Hello, world!");
 ```
 
-この行によって'Hello, world!'というメッセージが出力されています。
-```js
-console.log('Hello, world!');
-```
+実行して確かめてみましょう。
 
-次に、関数について見ていきましょう。
+[実行結果(paiza.io)](https://paiza.io/projects/7flgebPmTIyTBwOOykUxRw)

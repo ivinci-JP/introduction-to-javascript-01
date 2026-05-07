@@ -9,61 +9,50 @@
 
 2. プログラム内のコードは次のようになります。
 ```js
-function main() {
-    console.log("I'm")
-    console.log("learning")
-    console.log("Kotlin!")
-}
+console.log("I'm")
+console.log("learning")
+console.log("JavaScript!")
 ```
 
 3. プログラムの正しいコードは次のとおりです。
 ```js
-function main() {
-    console.log("Monday");
-    console.log("Tuesday");
-    console.log("Wednesday");
-    console.log("Thursday");
-    console.log("Friday");
-}
+console.log("月曜日");
+console.log("火曜日");
+console.log("水曜日");
+console.log("木曜日");
+console.log("金曜日");
 ```
 
-4. プログラムの 3 行目に、main 関数の関数本体の終了を示す閉じ中かっこがありません。
+4. `''`か`""`(引用符)で括られた範囲が文字列です。
+文字列の始まりの為の引用符と、終わりの為の引用符はペアである必要があります。
 ```js
-function main() {
-    console.log("Tomorrow is rainy");
-}
+console.log("大盛り無料");
 ```
 
-5. プログラムを実行すると`TypeError: console.logs is not a function`というエラーが表示されます。これは、`console.logs`がJavaScriptでは認識されない関数であるためです。関数名を`console.log`に変更することでエラーが解消されます。
+5. コンソールに出力するためのメソッドは`console.logs`ではなく`console.log`です
 ```js
-function main() {
-    console.logs("There is a chance of snow");
-}
+console.log("おかわり有料");
 ```
 
 6. プログラムを実行すると`SyntaxError: Unexpected identifier`というエラーが表示されます。このメッセージでは、問題を解決するための方法が直接示されていません。これは、エラーのトラブルシューティングを行う場合によくあることで、予期しない動作を解決するためにコードを詳しく調べる必要があります。
 
 よく見ると、コードの2番目の`console.log`の呼び出しにマークが付いており、この部分に問題があることがわかります。
-これはJavaScriptでは各行に1つのステートメントのみが記述されていることが想定されているためです。
+これはJavaScriptでは各行に1つの文のみが記述されていることが想定されているためです。
 この場合、2番目と3番目の`console.log`関数呼び出しを別々の新しい行に移動することで、問題を解決できます。
 ```
-/workspace/Main.js:5
-    console.log("Cloudy") console.log("Partly Cloudy") console.log("Windy")
-                          ^^^^^^^
+/workspace/Main.js:4
+console.log("イヌ") console.log("ネコ") console.log("ハムスター")
+                  ^^^^^^^
 ```
 正しいコード:
 ```js
-function main() {
-    console.log("Cloudy");
-    console.log("Partly Cloudy");
-    console.log("Windy");
-}
+console.log("イヌ");
+console.log("ネコ");
+console.log("ハムスター");
 ```
 
-7. プログラムを実行すると`SyntaxError: Unexpected token '('`というエラーが表示されます。
-関数本体は、丸括弧`()`ではなく波括弧`{}`で囲む必要があります。
+7. プログラムを実行すると`SyntaxError: Unexpected token '{'`というエラーが表示されます。
+関数呼び出しは、波括弧`{}`ではなく丸括弧`()`で囲む必要があります。
 ```js
-function main() {
-    console.log("How's the weather today?");
-}
+console.log("オムライス");
 ```
